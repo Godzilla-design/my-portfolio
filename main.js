@@ -1,14 +1,9 @@
 //navigation menu toggle on hover
 const menuBtn = document.querySelector('.menu-btn');
     const navLinks = document.querySelector('.nav-links');
-    menuBtn.addEventListener('mouseenter', () => {
+    menuBtn.addEventListener('click', () => {
         navLinks.classList.toggle('active');
     });
-
-    menuBtn.addEventListener('mouseleave', () => {
-        navLinks.classList.toggle('nonactive');
-    });
-
     // Contact Form Submission
 
     document.getElementById('contactForm').addEventListener('submit', async function (e) {

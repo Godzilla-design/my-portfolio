@@ -1,3 +1,210 @@
+/* ===== THEME TOGGLE BUTTON ===== */
+#theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 18px;
+    font-size: 1.5rem;
+    color: #ff5900;
+    transition: color 0.3s;
+}
+#theme-toggle:hover {
+    color: #8c6bff;
+}
+
+/* ===== LIGHT & DARK MODE ===== */
+body.light-mode {
+    background: #f8f9fb;
+    color: #181818;
+}
+body.light-mode .menu-btn .menu-icon,
+body.light-mode .menu-btn .menu-icon::before,
+body.light-mode .menu-btn .menu-icon::after {
+    background: #181818;
+}
+
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode h4,
+body.light-mode h5,
+body.light-mode h6,
+body.light-mode p,
+body.light-mode span,
+body.light-mode li,
+body.light-mode a {
+    color: #181818;
+}
+body.light-mode .about,
+body.light-mode .projects,
+body.light-mode .skills-section,
+body.light-mode .contact-section {
+    background: #fff;
+    color: #181818;
+}
+body.light-mode .project-card,
+body.light-mode .item {
+    background: #f0f4ff;
+    color: #181818;
+}
+body.light-mode .nav-links a {
+    color: #181818;
+    font-weight: 500;
+}
+body.light-mode .nav-links a:hover {
+    color: #0077b5;
+}
+body.light-mode label {
+    color: #222;
+}
+
+body.light-mode .navbar {
+    background: rgba(255,255,255,0.95);
+    color: #181818;
+}
+
+body.light-mode .logo {
+    background: linear-gradient(45deg, #5a2cff, #00d4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+body.light-mode .navbar {
+    background: rgba(255,255,255,0.95);
+    color: #181818;
+}
+body.light-mode .logo {
+    background: linear-gradient(45deg, #5a2cff, #00d4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+body.light-mode .nav-links a {
+    color: #181818;
+}
+body.light-mode .nav-links a:hover {
+    color: #5a2cff;
+}
+body.light-mode .hero {
+    background: radial-gradient(circle at top left, #99a6d2, transparent 60%),
+        radial-gradient(circle at bottom right, #5dcde9, transparent 60%);
+}
+body.light-mode .about,
+body.light-mode .projects,
+body.light-mode .skills-section,
+body.light-mode .contact-section {
+    background: #fff;
+    color: #680acd;
+}
+body.light-mode .project-card,
+body.light-mode .item {
+    background: #f0f4ff;
+    color: #680acd;
+}
+body.light-mode .contact-form {
+    background: #f8faff;
+    color: #181818;
+}
+body.light-mode input,
+body.light-mode textarea {
+    background: #fff;
+    color: #181818;
+    border: 1px solid #bdbdbd;
+}
+body.light-mode label {
+    color: #181818;
+}
+body.light-mode .send-btn {
+    background: linear-gradient(45deg, #5a2cff, #00d4ff);
+    color: #fff;
+}
+body.light-mode .footer-icons .icon {
+    color: #fff;
+}
+body.light-mode .footer-icons .facebook {
+    background: #3b5998;
+}
+body.light-mode .footer-icons .whatsapp {
+    background: #25d366;
+}
+body.light-mode .footer-icons .linkedin {
+    background: #0077b5;
+}
+body.light-mode .footer-icons .github {
+    background: #333;
+}
+body.light-mode .footer-icons .tiktok {
+    background: #010101;
+}
+
+body.dark-mode {
+    background: #0d0d16;
+    color: #fff;
+}
+body.dark-mode .navbar {
+    background: rgba(10, 10, 25, 0.8);
+    color: #ffffff;
+}
+body.dark-mode .logo {
+    background: linear-gradient(45deg, #5a2cff, #00d4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+body.dark-mode .nav-links a {
+    color: #d3d3ff;
+}
+body.dark-mode .nav-links a:hover {
+    color: #8ab8ff;
+}
+body.dark-mode .hero {
+    background: radial-gradient(circle at top left, #5627ff, transparent 60%),
+        radial-gradient(circle at bottom right, #00e0ff, transparent 60%);
+}
+body.dark-mode .about,
+body.dark-mode .projects,
+body.dark-mode .skills-section,
+body.dark-mode .contact-section {
+    background: #0d0d16;
+    color: #fff;
+}
+body.dark-mode .project-card,
+body.dark-mode .item {
+    background: #1b1b2d;
+    color: #fff;
+}
+body.dark-mode .contact-form {
+    background: rgba(25, 25, 45, 0.55);
+    color: #fff;
+}
+body.dark-mode input,
+body.dark-mode textarea {
+    background: #0d0d16;
+    color: #fff;
+    border: 1px solid rgba(120, 120, 255, 0.25);
+}
+body.dark-mode label {
+    color: #c5c7ff;
+}
+body.dark-mode .send-btn {
+    background: linear-gradient(45deg, #6a4dff, #00c8ff);
+    color: #fff;
+}
+body.dark-mode .footer-icons .icon {
+    color: #fff;
+}
+body.dark-mode .footer-icons .facebook {
+    background: #3b5998;
+}
+body.dark-mode .footer-icons .whatsapp {
+    background: #25d366;
+}
+body.dark-mode .footer-icons .linkedin {
+    background: #0077b5;
+}
+body.dark-mode .footer-icons .github {
+    background: #333;
+}
+body.dark-mode .footer-icons .tiktok {
+    background: #010101;
+}
 /* ===== General Styles ===== */
 * {
     margin: 0;
@@ -124,6 +331,15 @@ section {
         border-radius: 10px;
         box-shadow: 0 8px 24px rgba(0,0,0,0.2);
         display: none;
+    }
+    body.light-mode .nav-links {
+        background: #fff;
+    }
+    body.light-mode .nav-links a {
+        color: #181818 !important;
+    }
+    body.light-mode .nav-links a:hover {
+        color: #0077b5 !important;
     }
     .nav-links.active {
         display: flex;
