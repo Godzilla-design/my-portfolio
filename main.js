@@ -4,6 +4,38 @@ const menuBtn = document.querySelector('.menu-btn');
     menuBtn.addEventListener('click', () => {
         navLinks.classList.toggle('active');
     });
+
+     // Theme toggle logic
+      const themeToggle = document.getElementById("theme-toggle");
+      const themeIcon = document.getElementById("theme-icon");
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      const savedTheme = localStorage.getItem("theme");
+      function setTheme(mode) {
+        if (mode === "light") {
+          document.body.classList.remove("dark-mode");
+          document.body.classList.add("light-mode");
+          themeIcon.classList.remove("fa-sun");
+          themeIcon.classList.add("fa-moon");
+        } else {
+          document.body.classList.remove("light-mode");
+          document.body.classList.add("dark-mode");
+          themeIcon.classList.remove("fa-moon");
+          themeIcon.classList.add("fa-sun");
+        }
+        localStorage.setItem("theme", mode);
+      }
+      if (savedTheme) {
+        setTheme(savedTheme);
+      } else {
+        setTheme(prefersDark ? "dark" : "light");
+      }
+      themeToggle.addEventListener("click", () => {
+        const isDark = document.body.classList.contains("dark-mode");
+        setTheme(isDark ? "light" : "dark");
+      });
+      
     // Contact Form Submission
 
     document.getElementById('contactForm').addEventListener('submit', async function (e) {
