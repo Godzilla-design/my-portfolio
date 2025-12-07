@@ -249,6 +249,7 @@ section {
     background: linear-gradient(45deg, #5a2cff, #00d4ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-top: 20px;
 }
 
 .logo-img {
