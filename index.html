@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HEXTECH | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+    <!-- logo here -->
+    <link rel="icon" type="image/png" href="images/logo.jpg" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+             <!-- logo here -->
+             <img src="images/logo.jpg" alt="HEXTECH Logo" class="logo-img" height="80px" width="auto" />
+            <div class="logo">HEXTECH</div>
+           
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-btn" aria-label="Open menu">
+                <span class="menu-icon"></span>
+            </button>
+            
+        </nav>
+        <section id="home" class="hero">
+            <div class="grid-container">
+                <div class="">
+            <h1>HEXTECH</h1>
+            <h2>Web Developer & Full Stack Developer</h2>
+            <p>Building modern, performant, and innovative web solutions.</p>
+            </div>
+            <div class="image-container">
+                <img src="images/male-programmer-working-developing-new-html-script.jpg" alt="Hero Image" class="img" height="auto" width="100%" />
+            </div>
+            </div>
+        </section>
+    </header>
+    <section id="about" class="about">
+        <div class="grid-container">
+            <div class="item">
+                <h2>Skills</h2>
+                <ul>
+                    <ol>HTML5, CSS3, JavaScript (ES6+)</ol>
+                    <ol>React.js, Node.js, Express.js</ol>
+                    <ol>Responsive Web Design</ol>
+                    <ol>Version Control (Git & GitHub)</ol>
+                    <ol>RESTful APIs</ol>
+                    <ol>Database Management (MongoDB, SQL)</ol>
+                </ul>
+            </div>
+            <div class="item">
+                <h2>About Me</h2>
+                <p>I’m a web developer focused on modern, performant, and innovative web solutions. As a lifelong tech enthusiast, I love exploring cutting-edge tools and transforming concepts into polished, functional products. Would love to work and connect with you.</p>
+            </div>
+        </div>
+
+        <section id="skills" class="skills-section">
+    <h2>Skills Snapshot</h2>
+
+    <div class="skills-wrapper">
+
+        <div class="skill">
+            <div class="skill-info">
+                <span>HTML</span>
+                <span>95%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 95%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span>CSS</span>
+                <span>92%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 92%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span>JavaScript</span>
+                <span>80%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 80%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span>PHP</span>
+                <span>75%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 75%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span>Tailwind CSS</span>
+                <span>90%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 90%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span>Bootstrap</span>
+                <span>87%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 87%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span>Python</span>
+                <span>70%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 70%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span>Node.js</span>
+                <span>78%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 78%;"></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    </section>
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>E‑commerce Website</h3>
+                <p>A modern, scalable online shopping platform with secure payments and dynamic product management.</p>
+            </div>
+            <div class="project-card">
+                <h3>Skin Care Brand</h3>
+                <p>A stylish and engaging brand website with product display, testimonials, and smooth animations.</p>
+            </div>
+            <div class="project-card">
+                <h3>Construction Company</h3>
+                <p>A professional multi‑page website showcasing services, past projects, and contact information.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <ul>
+            <li>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></li>
+            <li>LinkedIn: <a href="#">Your LinkedIn</a></li>
+            <li>TikTok: <a href="#">Your TikTok</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2025 HEXTECH. All rights reserved.</p>
+    </footer>
+</body>
+<script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    menuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
+</body>
+</html>
